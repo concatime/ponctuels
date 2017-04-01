@@ -1,0 +1,25 @@
+{
+	"version": "0.1.0",
+	"tasks": [
+		{
+			"taskName": "test",
+			"command": "java",
+			"args": [
+				"-cp",
+				"${fileDirname}/../../../bin",
+				"${fileBasenameNoExtension}"
+			]
+		},
+		{
+			"taskName": "build",
+			"command": "jar",
+			"args": [
+				"cf",
+				"${fileDirname}/../../../send.jar",
+				"${fileDirname}/../../../src",
+				"${fileDirname}/../../../.project",
+				"${fileDirname}/../../../.classpath"
+			]
+		}
+	]
+}
